@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<hr>
+<div class="card">
+  <h5 class="card-header">Transaction #0000011112222</h5>
+  <div class="card-body">
+    <h5 class="card-title">Shipping</h5>
+    <p class="card-text">Please select the shipping method.</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="showShipping('FCA')" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        FCA
+      </label>
+        <div id="FCA" style="display: block;">{% include "pay_options.html" %}</div>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="showShipping('FOB')">
+      <label class="form-check-label" for="exampleRadios2">
+        FOB
+      </label>
+        <div id="FOB" style="display: none;">{% include "pay_options.html" %}</div>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="showShipping('DDP')">
+      <label class="form-check-label" for="exampleRadios3">
+        DDP 
+      </label>
+        <div id="DDP" style="display: none;">{% include "pay_options.html" %}</div>
+    </div>
+    <br>
+    <a href="/deliver" class="btn btn-primary">Submit</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<hr>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card">
+  <h5 class="card-header">Transaction #0000011112222</h5>
+  <div class="card-body">
+    <h5 class="card-title">Customer Satisfaction</h5>
+    <br>
+    <div class="form-row">
+    	<div class="form-group col-4">
+    		<h6>Performance</h6><br>
+    		<h6>Quality</h6><br>
+    		<h6>Delivery</h6><br>	
+    	</div>
+    	<div class="form-group col-5">
+		<fieldset class="rating">
+		    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+		    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Very good - 4 stars"></label>
+		    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Good - 3 stars"></label>
+		    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Bad - 2 stars"></label>
+		    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Terrible - 1 star"></label>
+		</fieldset>
+		<input type="text" class="form-control" placeholder="Please give a brief evaluation ..."><br>
+		<input type="text" class="form-control" placeholder="Please give a brief evaluation ...">
+    	</div>
+    </div>
+    <a href="#" class="btn btn-primary">Submit</a>
+  </div>
+</div>
+
+{% endblock %}
+<!-- 
+
+    <div  style="text-align: center;">
+        <a href="#" class="btn btn-primary" style="text-align: center;">Send</a>
+    </div>
+ -->

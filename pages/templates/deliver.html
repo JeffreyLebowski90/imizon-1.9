@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<hr>
+<div class="card">
+  <h5 class="card-header">Transaction #0000011112222</h5>
+  <div class="card-body">
+    <h5 class="card-title">Deliver</h5>
+    <p class="card-text">Please select the time of delivery.</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" onclick="showShipping('FCA')" checked>
+      <label class="form-check-label" for="exampleRadios1">
+        30 gg - € ...
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" onclick="showShipping('FOB')">
+      <label class="form-check-label" for="exampleRadios2">
+        60 gg - € ...
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" onclick="showShipping('DDP')">
+      <label class="form-check-label" for="exampleRadios3">
+        90 gg - € ... 
+      </label>
+    </div>
+    <br>
+    <a href="/terms" class="btn btn-primary">Submit</a>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,186 @@
+body{
+	/*background-image: url("http://www.robertmakgill.com/wp-content/uploads/img-oil-gas.jpg");*/
+	/*background-image: url("https://www.spe.org/media/filer_public/61/3b/613bbd3c-9412-43db-aac1-83abb97bc725/twa_2017_12_asseteval_hero.jpg");*/
+  background-image: url("/static/blue_background.jpg");
+	/*background-image: url("http://www.kmpgoilgasrefinery.com/dyna-builder/page-thumbnail.html?pid=0");*/
+	background-size: 150vh; /*74*/
+	background-position: right;
+  background-position: top;
+	/*background-repeat: no-repeat;*/
+	/*background-image: url(example.jpg);*/
+/*	background-color: #0f121f;
+	background-repeat-y: no-repeat;*/
+
+	/*overflow-x: hidden;*/
+	/*overflow-y: hidden;*/
+	/*overflow-x: scroll;*/
+	
+}
+
+br{
+	line-height: 150%;
+}
+
+.paramz{
+	color: #fff;
+	font-style: 10;
+	font-size: 115%;
+	font: bold 28px/26px Ubuntu, serif;
+	/*font-family: Ubuntu;*/
+}
+
+.dropdown-toggle::after {
+    display: none;
+/*    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;*/
+}
+
+/*.scrolling-wrapper {*/
+/*  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;*/
+/*    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}*/
+
+/*  .card {*/
+    /*display: inline-block;*/
+/*    flex: 0 0 auto;
+  }*/
+
+
+/*.ciao{
+		color: #000;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }*/
+
+body*{
+	font-family: Ubuntu;
+}
+
+/*h1, h2, h3, h4, h5{
+	font-weight: normal;
+	margin: 0;
+}*/
+
+/*a, a:hover, a:visited{
+	color: #fff;
+	text-decoration: none;
+}*/
+
+/*img {
+	
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}*/
+
+
+div.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  opacity: 0.9;
+  width: 780px;
+  /*height: 610px;*/
+  height:92vh;
+}
+div.scrollmenu p {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 130px;
+}
+div.scrollmenu p:hover {
+  background-color: #777;
+}
+
+div.nonscrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  opacity: 0.9;
+  width: 260px;
+}
+div.nonscrollmenu p {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 130px;
+}
+div.nonscrollmenu p:hover {
+  background-color: #777;
+}
+
+
+
+
+
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+/*fieldset, label { margin: 0; padding: 0; }
+body{ margin: 20px; }
+h1 { font-size: 1.5em; margin: 10px; }*/
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+}
+
+.rating > input { display: none; } 
+.rating > label:before {
+  margin-top: 0px;
+  margin-left: 7px;
+  /*margin: 5px;*/
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+  position: relative;
+  top: -5px;
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #ddd; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+    text-align: center;
+}
